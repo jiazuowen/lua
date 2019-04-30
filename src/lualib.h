@@ -39,6 +39,10 @@ LUALIB_API int (luaopen_debug) (lua_State *L);
 #define LUA_LOADLIBNAME	"package"
 LUALIB_API int (luaopen_package) (lua_State *L);
 
+// 自定义Lua库
+#define LUA_JAC_LOGLIBNAME "jaclog"
+LUALIB_API int (luaopen_jaclog) (lua_State* L);
+
 
 /* open all previous libraries */
 LUALIB_API void (luaL_openlibs) (lua_State *L); 

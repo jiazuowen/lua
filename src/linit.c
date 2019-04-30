@@ -23,6 +23,7 @@ static const luaL_Reg lualibs[] = {
   {LUA_STRLIBNAME, luaopen_string},
   {LUA_MATHLIBNAME, luaopen_math},
   {LUA_DBLIBNAME, luaopen_debug},
+  {LUA_JAC_LOGLIBNAME, luaopen_jaclog}, // 添加自定义库
   {NULL, NULL}
 };
 
